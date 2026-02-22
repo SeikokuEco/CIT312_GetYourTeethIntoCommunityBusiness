@@ -1,0 +1,302 @@
+* {
+	margin: 0px;
+}
+.upper_nav {
+	background-color: #222425;
+}
+
+.upper_nav li, .upper_nav li a {
+    display: inline-block;
+    padding: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
+	text-decoration: none;
+	color: lightgray;
+    width: max-content;
+    font-weight: bold;
+
+}
+
+nav a {
+	text-decoration: none;
+	font-weight: bold;
+	color: white;
+}
+
+
+/* Hamburger Menu Start */
+nav {
+	position: fixed;
+	z-index: 1000;
+	top: 0;
+	left: 0;
+	width: 30%;
+	height: 100vh;
+	border: 1px;
+	padding: 1px;
+	background-color: black;
+	/* text-align: center; */
+	transform: translateX(-100%);
+	transition: transform 0.5s ease;
+}
+
+nav img {
+
+    position: absolute;
+    right: 8vw;
+    bottom: 5vh;
+    width: 100px;
+
+}
+
+nav ul {
+
+    position: relative;
+    margin: 0px;
+    height: 1%;
+    padding-left: 5%;
+
+}
+
+nav li {
+
+    margin-top: 5%;
+    padding: 2%;
+
+}
+
+nav li:hover {
+    background-color: lightgrey;
+}
+
+.upper_nav a:hover {
+    text-decoration: overline underline;
+    color: white;
+}
+
+nav:target {
+	transform: translateX(0);
+}
+
+.close {
+    position: fixed;
+    bottom: 20%;
+    left: 25%;
+    font-size: medium;
+}
+
+.close:hover {
+
+    color: red;
+
+}
+
+.fa-bars {
+    padding: 1em;
+}
+
+@media screen and (min-width: 732px) {
+	nav {
+		position: static;
+		height: auto;
+		transform: translateX(0);
+		width: 100%;
+        background-color: white;
+	}
+
+    nav a {
+
+        color: black;
+
+    }
+
+	.hamburger,
+	.close {
+		display: none;
+	}
+
+	nav li {
+		display: inline-block;
+        margin-top: 0%;
+	}
+
+    nav ul {
+
+        width: 75%;
+
+    }
+
+    nav img {
+
+        position: absolute;
+        right: 2%;
+        top: 2vh;
+        width: 150px;
+
+    }
+
+    #logolight {
+        display: none;
+    }
+}
+
+/* Hamburger Menu End */
+
+/* section with teeth showing */
+.front_basics {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #222425;
+    align-items: center;
+    padding: 2rem;
+
+}
+
+.front_basics img {
+    width: 100%;
+    display: inline-block;
+}
+
+.front_basics div {
+    width: fit-content;
+    height: max-content;
+    color: white;
+    font-size: xx-large;    
+}
+
+
+
+/* section with mini info box */
+
+.mini_info_box {
+    background-color: #46b98c;
+    padding: 2rem;
+    color: white;
+    font-weight: 400;
+    font-size: large;
+
+}
+
+/* footer */
+
+footer {
+
+    position: relative;
+    width: 100%;
+    height: 500px;
+    bottom: 0px;
+    background-color: #222425;
+
+}
+
+.channellist {
+
+    position: absolute;
+    bottom:  18%;
+    right: 10px;
+    text-decoration: none;
+
+    /* stolen online when i looked up have to remove bullet points */
+    /* https://www.w3schools.com/howto/howto_css_list_without_bullets.asp */
+    list-style-type: none; /* Remove bullets */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margins */
+}
+
+.channellist li {
+
+    display: inline-block;
+    font-size: xx-large;
+    padding: 0.1em;
+
+}
+
+.social-item-link,
+.social-item-link:visited {
+
+    color: lightgrey;
+    text-decoration: none;
+
+}
+
+.disclaimer {
+    
+    position: absolute;
+    bottom: 0em;
+    padding-left: 0px;
+    margin-left: 2em;
+    border-top: 3px solid lightgrey;
+
+}
+
+.disclaimer li {
+
+    display: inline-block;
+    padding: 0.7em;
+
+}
+
+.disclaimer-link a, .disclaimer-link a:visited, .disclaimer-copyright, .fatFooterItem a, .fatFooterItem a:visited {
+
+    text-decoration: none;
+    color: lightgrey;
+
+}
+
+.disclaimer-link a:hover, .fatFooterItem a:hover {
+    color: white;
+}
+
+.footerSections {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 90%;
+    height: 80%;
+
+}
+
+.footerSection {
+
+    color: lightgrey;
+    list-style-type: none; /* Remove bullets */
+    padding-top: 2em;
+    font-weight: bold;
+
+
+}
+
+.fatFooterItem {
+
+    font-weight: normal;
+    padding-top: 6%;
+
+}
+
+
+/* task 6 - little customizations */
+/* I tried to make things look prettier throughout the webpage, too */
+.channellist li:nth-child(1) a:hover {
+
+    color: #0866ff; /* Facebook */
+
+}
+
+.channellist li:nth-child(2) a:hover {
+
+    color: #fb0133; /* YouTube */
+
+}
+
+.channellist li:nth-child(3) a:hover {
+
+    color: #fa2099; /* Instagram */
+
+}
+
+.channellist li:nth-child(4) a:hover {
+
+    color: #0a66c2; /* LinkedIn */
+
+}
