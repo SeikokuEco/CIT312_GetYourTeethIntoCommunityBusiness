@@ -96,6 +96,10 @@ h2 {
 	color: #46b98c;
 }
 
+.flip-card-front {
+    transform: rotateY(0deg);
+}
+
 .flip-card-back {
 	/* color: darkolivegreen; */
     color: black;
